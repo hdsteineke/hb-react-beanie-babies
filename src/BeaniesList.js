@@ -1,5 +1,5 @@
 import BeanieBaby from './BeanieBaby.js';
-import { useState } from 'react';
+// import { useState } from 'react';
 import React from 'react';
 
 export default function BeaniesList({ beanieBabies }) {
