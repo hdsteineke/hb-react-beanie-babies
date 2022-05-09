@@ -6,22 +6,28 @@ import {
   Route,
 } from 'react-router-dom';
 import BeaniesPage from './BeaniesPage';
-import BeaniesList from './BeaniesList';
 import BeanieDetail from './BeanieDetail';
 
 export default function App() {
-  const [beanieBabies, setBeanBabies] = useState([]);
   return (
     <Router>
       <div className='App'>
+        {/* <nav>
+          <ul>
+            <li>
+              <NavLink exact activeClassName="current-page" to="/">Home</NavLink>
+            </li>
+          </ul>
+        </nav> */}
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
             {/* this home page route should list all the beanies */}
-            <BeaniesList beanieBabies={beanieBabies} />
+            <BeaniesPage />
 
           </Route>
-          <Route path='/beanies/:id'> 
+          <Route exact path='/beanies/:id'> 
             {/* this route should point to a particulat beanie baby by id and render that specific BeanieDetail page */}
+            <BeanieDetail />
           </Route>
         </Switch>
       </div>
