@@ -15,6 +15,7 @@ body {
 
 .beanie-baby {
   margin: 20px;
+  border: groove;
 }
 
 .beanie-baby .beanie-img {
@@ -54,3 +55,8 @@ body {
   margin: 10px;
   padding: 20px;
 }
+
+img {
+  width: 200px;
+}
+

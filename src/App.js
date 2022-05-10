@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,6 +6,7 @@ import {
 } from 'react-router-dom';
 import BeaniesPage from './BeaniesPage';
 import BeanieDetail from './BeanieDetail';
+
 
 export default function App() {
   return (
